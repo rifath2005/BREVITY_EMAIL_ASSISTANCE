@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Globe } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import popupMockup from "@/assets/popup-mockup.png";
 

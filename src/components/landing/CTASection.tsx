@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap } from "lucide-react";
+import { Globe, Zap } from "lucide-react";
 
 const CHROME_STORE_URL = "#";
 
