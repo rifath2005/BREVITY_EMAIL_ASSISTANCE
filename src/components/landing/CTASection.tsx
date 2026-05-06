@@ -29,7 +29,7 @@ const CTASection = () => (
           rel="noopener noreferrer"
           className="mt-8 inline-flex items-center gap-3 rounded-xl bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-green"
         >
-          <Chrome className="h-5 w-5" />
+          <Globe className="h-5 w-5" />
           Download Extension — It's Free
         </a>
 

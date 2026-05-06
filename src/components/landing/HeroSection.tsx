@@ -45,7 +45,7 @@ const HeroSection = () => (
             rel="noopener noreferrer"
             className="group flex items-center gap-3 rounded-xl bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-green"
           >
-            <Chrome className="h-5 w-5" />
+            <Globe className="h-5 w-5" />
             Download Extension
           </a>
           <span className="text-sm text-muted-foreground">Works with Gmail · 100% free</span>
