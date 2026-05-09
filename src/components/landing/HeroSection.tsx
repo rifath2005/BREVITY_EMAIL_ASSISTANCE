@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Globe, Zap } from "lucide-react";
+import { ArrowDown, Download, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import popupMockup from "@/assets/popup-mockup.png";
-
-const CHROME_STORE_URL = "#";
 
 const HeroSection = () => (
   <section className="relative min-h-screen overflow-hidden pt-24">
@@ -40,12 +38,11 @@ const HeroSection = () => (
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
           <a
-            href={CHROME_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/brevity-extension.zip"
+            download="brevity-extension.zip"
             className="group flex items-center gap-3 rounded-xl bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-green"
           >
-            <Globe className="h-5 w-5" />
+            <Download className="h-5 w-5" />
             Download Extension
           </a>
           <span className="text-sm text-muted-foreground">Works with Gmail · 100% free</span>

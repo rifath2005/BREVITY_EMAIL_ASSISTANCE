@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Globe, Zap } from "lucide-react";
-
-const CHROME_STORE_URL = "#";
+import { Download } from "lucide-react";
+import logo from "../../assets/brevitylogo.png";
 
 const CTASection = () => (
   <section className="relative py-24">
@@ -13,7 +12,7 @@ const CTASection = () => (
         className="glass glow-green mx-auto max-w-3xl rounded-3xl p-12 text-center md:p-16"
       >
         <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/20">
-          <Zap className="h-8 w-8 text-primary" />
+          <img src={logo} alt="Brevity Logo" className="h-12 w-12 object-contain" />
         </div>
 
         <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
@@ -24,17 +23,16 @@ const CTASection = () => (
         </p>
 
         <a
-          href={CHROME_STORE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/brevity-extension.zip"
+          download="brevity-extension.zip"
           className="mt-8 inline-flex items-center gap-3 rounded-xl bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-green"
         >
-          <Globe className="h-5 w-5" />
+          <Download className="h-5 w-5" />
           Download Extension — It's Free
         </a>
 
         <p className="mt-4 text-xs text-muted-foreground">
-          Chrome, Edge, Brave, Arc · No account needed
+          Chrome, Edge, Brave, Arc · Install in developer mode
         </p>
       </motion.div>
     </div>

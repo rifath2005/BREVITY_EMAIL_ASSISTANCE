@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Zap } from "lucide-react";
-
-const CHROME_STORE_URL = "#";
+import { Download } from "lucide-react";
+import logo from "../../assets/brevitylogo.png";
 
 const Navbar = () => (
   <motion.nav
@@ -12,9 +11,7 @@ const Navbar = () => (
   >
     <div className="container mx-auto flex items-center justify-between px-6 py-4">
       <div className="flex items-center gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-          <Zap className="h-4 w-4 text-primary-foreground" />
-        </div>
+        <img src={logo} alt="Brevity Logo" className="h-8 w-8 object-contain" />
         <span className="font-heading text-xl font-bold text-foreground">Brevity</span>
       </div>
 
@@ -31,11 +28,11 @@ const Navbar = () => (
       </div>
 
       <a
-        href={CHROME_STORE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-green"
+        href="/brevity-extension.zip"
+        download="brevity-extension.zip"
+        className="flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-green"
       >
+        <Download className="h-4 w-4" />
         Download Free
       </a>
     </div>
